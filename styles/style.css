@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+:root{
+    --firstcolor: rgb(3, 131, 22);
+    --secondcolor: rgba(255, 255, 255, 0);
+    --radius: 2px;
+    --txtcolor: white;
+    --txtcolorhover: rgb(255, 255, 255);
+    --inputbg: white;
+    --bgcolor: rgb(14, 3, 24);
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    color: white;
+}
+
+*{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+body{
+    background-color: var(--bgcolor);
+}
+
+form input{
+    height: 30px;
+    width: 250px;
+    margin-bottom: 5px;
+    background-color: var(--inputbg);
+    border-radius: 5px;
+    border:none;
+}
+
+button{
+    height: 30px;
+    width: 120px;
+    background-color: var(--firstcolor);
+    border-radius: var(--radius);
+    margin-top: 10px;
+    border: 1px solid var(--firstcolor);
+    color: var(--txtcolor);
+}
+
+button:hover{
+    background-color: var(--secondcolor);
+    color: var(--txtcolorhover);
+    cursor: pointer;
+    box-shadow: 2px 2px 2px var(--firstcolor);
+    transition: 0.16s;
+}
+
+.txt {
+    border: 1px solid var(--firstcolor);;
+    padding: 3px 17px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--txtcolor);
+    margin: 5px;
+    background-color: var(--firstcolor);
+}
+
+.txt:hover{
+    background-color: var(--secondcolor);
+    color: var(--txtcolorhover);
+    box-shadow: 2px 2px 2px var(--firstcolor);
+    transition: 0.16s;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.048);
+    box-shadow: 0px 0px 3px rgba(186, 67, 233, 0.308);
+}
+
+.menu{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 0%;
+    background-color: rgba(255, 255, 255, 0);
+    margin-right: 30px;
+}
+
+.logo{
+    width: 40px;
+}
+
+.logotipo{
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.loginsys{
+    margin-left: 15px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.title{
+    font-size: 35px;
+    color: rgb(255, 232, 247);
+    margin: 30px;
+}
+
+.alterbtn{
+    border: 1px solid var(--firstcolor);;
+    padding: 3px 17px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--txtcolor);
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.alterbtn:hover{
+    background-color: var(--firstcolor);
+    transition: 0.16s;
+}
+
+.errormsg{
+    color: rgb(255, 67, 67);
+    font-size: 15px;
+}
+
+.successmsg{
+    color: rgb(83, 255, 67);
+    font-size: 15px;
+}
